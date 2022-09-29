@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freeshka Coffee Co.</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;500;700&display=swap"
+    rel="stylesheet" />
+
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
+    type='text/css'>
+
+<body>
+  <section class="header">
+    <nav>
+      <a href="index.html"><img src="images/logo.png" /></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="">POČETNA</a></li>
+          <li><a href="">O NAMA</a></li>
+          <li><a href="">KAFA</a></li>
+          <li><a href="">KONTAKT</a></li>
+          <li><a href="">PORUČITE ONLINE</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="text-box">
+      <h1>Služimo najsvežiju kafu u gradu.</h1>
+      <i class="fa fa-sad-cry    "></i>
+      <p>Dobrodošli!</p>
+      <a href="" class="hero-btn">Posetite nas!</a>
+    </div>
+  </section>
+
+  <!--Porucite-->
+  <section class="porucite">
+    <h1>Poručite Freeshku kafu ovde</h1>
+
+    <div class="product-container">
+      <div class="row">
+        <div class="proizvod">
+          <a href=""><img src="images/light.jpg">
+            <div class="layer">
+              <p>Light</p>
+            </div>
+          </a>
+        </div>
+        <div class="proizvod">
+          <a href=""><img src="images/classic.jpg">
+            <div class="layer">
+              <p>Classic</p>
+            </div>
+          </a>
+        </div>
+        <div class="proizvod">
+          <a href=""><img src="images/strong.jpg">
+            <div class="layer">
+              <p>Strong</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <button>Odaberite mešavinu</button>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <div class="customer-reviews">
+      <div class="review-box">
+        <div id="slide">
+          <div class="card">
+            <h3>Mladenka Tošić</h3>
+            <div class="ocena">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <p>I love this place!
+              If you are in a hurry, they offer coffe to go. A perfect idea if you are on your way to Strand. Your pet
+              is
+              wecome too.
+              You can choose from aroma, strong, light and classic. Surely the best coffe in town! Kid-friendliness: It
+              is
+              cute how this place is like a pitstop for moms with strollers.</p>
+          </div>
+          <div class="card">
+            <h3>Jovana Stefanović</h3>
+            <div class="ocena">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <p>Super cute shop. Their coffee has divine smell and mild creamy aroma. Staff is friendly and professional.
+              Highly recommend.</p>
+          </div>
+          <div class="card">
+            <h3>Lea S</h3>
+            <div class="ocena">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <p>Favorite spot and coffee flavor in Novi Sad. Usually I drop after work and take Ethiopian coffee. Staff
+              is
+              kind and really attentive. Compliments to the shop!</p>
+          </div>
+          <div class="card">
+            <h3>Veljko Petrović</h3>
+            <div class="ocena">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <p>The atmosphere of this tiny coffee shop is merely very very good. The coffee, however is exquisite,
+              fresh,
+              expertly blended and very reasonably priced. The service is friendly, prompt, and knowledgeable.</p>
+          </div>
+        </div>
+        <div class="sidebar">
+          <i class="fa fa-angle-up fa-2x" id="upArrow"></i>
+          <i class="fa fa-angle-down fa-2x" id="downArrow"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery">
+    <div class="gallery-background">
+      <h2>Galerija</h2>
+      <div class="pictures">
+        <div class="g-image"><img src="images/1.jpg"></div>
+        <div class="g-image"><img src="images/2.jpg"></div>
+        <div class="g-image"><img src="images/3.jpg"></div>
+        <div class="g-image"><img src="images/4.jpg"></div>
+        <div class="g-image"><img src="images/5.jpg"></div>
+        <div class="g-image"><img src="images/6.jpg"></div>
+      </div>
+
+      <div class="popup-image">
+        <span>&times;</span>
+        <img src="images/1.jpg">
+      </div>
+    </div>
+  </section>
+
+  <section class="footer">
+    <div class="about">
+      <div class="headline">
+        <h4>O nama</h4>
+        <span class="coffee">
+          <i class="fa fa-coffee "></i>
+        </span>
+      </div>
+      <p>Sve počinje prvom jutarnjom, nastavlja se popodnevnom a nekom i sa večernjom, naravno kafom…</p>
+    </div>
+    <div class="details">
+      <div class="about-box">
+        <span class="icon">
+          <i class="fa fa-bicycle fa-2x"></i></span>
+        <div class="about-headline">Bike & Pet Friendly</div>
+        <div class="about-text"> Bez obzira na to kako dolazite - sa ljubimcem, na rolerima, biciklu, sa prijateljem ili
+          sami, ovde ste
+          uvek dobrodošli!</div>
+      </div>
+      <div class="about-box">
+        <span class="icon">
+          <i class="fa fa-clock-o fa-2x"></i></span>
+        <div class="about-headline">Working hours</div>
+        <div class="about-text"> Pon - Pet: 06:30 - 21:00 <br>
+          Subota: 08:00 - 21:00 <br>
+          Nedelja: 09:00 - 21:00</div>
+      </div>
+      <div class="about-box">
+        <span class="icon">
+          <i class="fa fa-envelope fa-2x"></i></span>
+        <div class="about-headline">Contact</div>
+        <div class="about-text"> Bulevar oslobođenja 94, 21000 Novi Sad <br>
+          Tel: +381 63 21 301 81 44 <br>
+          Email: info@freeshkakafa.com <br>
+        </div>
+      </div>
+    </div>
+    <div class="icons">
+      <a href="https://www.facebook.com/FreeshkaKafa/"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.instagram.com/freeshkakafa/?hl=en"><i class="fa fa-instagram"></i></a>
+    </div>
+    <p class="author">Made with <i class="fa fa-heart"></i> by Bojana</p>
+  </section>
+
+
+  <script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+  <script>
+    var slide = document.getElementById("slide");
+    var upArrow = document.getElementById("upArrow");
+    var downArrow = document.getElementById("downArrow");
+
+    let x = 0;
+
+    downArrow.onclick = function () {
+      if (x > "-900") {
+        x = x - 300;
+        slide.style.top = x + "px";
+      }
+    }
+
+    upArrow.onclick = function () {
+      if (x < 0) {
+        x = x + 300;
+        slide.style.top = x + "px";
+      }
+    }
+
+  </script>
+  <script>
+    document.querySelectorAll('.pictures img').forEach(image => {
+      image.onclick = () => {
+        document.querySelector('.popup-image').style.visibility = 'visible';
+        document.querySelector('.popup-image img').src = image.getAttribute('src');
+      }
+    });
+
+    document.querySelector('.popup-image span').onclick = () => {
+      document.querySelector('.popup-image').style.visibility = 'hidden';
+    }
+  </script>
+</body>
+
+</html>
