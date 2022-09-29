@@ -47,7 +47,7 @@ nav {
     content: '';
     width: 0%;
     height: 2px;
-    background-color: rgb(228, 154, 125);
+    background-color: rgb(184, 85, 39);
     display: block;
     margin: auto;
     transition: width, 0.35s;
