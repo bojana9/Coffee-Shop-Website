@@ -1,0 +1,64 @@
+.coffee-containter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.recipe {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    margin-top: 50px;
+
+    border: none;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.479);
+
+}
+
+
+.text h3 {
+    padding-left: 10px;
+    font-size: 25px;
+
+}
+
+.text p {
+    text-align: justify;
+    line-height: 1.8;
+    font-size: 17px;
+
+
+}
+
+.turska-img img {
+    width: 250px;
+    height: 300px;
+    border: 2px solid black;
+    display: block;
+}
+
+.hario-img img {
+    border: 2px solid black;
+    display: block;
+}
+
+.chemex-img img {
+    border: 2px solid black;
+    height: 700px;
+    width: 350px;
+    vertical-align: bottom;
+
+
+}
+
+.aeropress-img img {
+    height: 1150px;
+    width: 450px;
+    object-fit: cover;
+    border: 2px solid black;
+    vertical-align: bottom;
+}
