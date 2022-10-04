@@ -15,9 +15,12 @@
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
         type='text/css'>
 
+    <link rel="stylesheet" href="coffee-shop-style.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="about-style.css">
     <link rel="stylesheet" href="contact-style.css">
+
+
 </head>
 
 <body>
@@ -25,22 +28,201 @@
     <section class="sub-header">
         <nav>
             <a href="index.html"><img src="images/logo.png" /></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="index.html">POČETNA</a></li>
-                    <li><a href="about.html">O NAMA</a></li>
-                    <li><a href="priprema-kafe.html">PRIPREMA KAFE</a></li>
-                    <li><a href="contact.html">KONTAKT</a></li>
-                    <li><a href="">PORUČITE ONLINE</a></li>
-                </ul>
+            <div class="wrapper">
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">POČETNA</a></li>
+                        <li><a href="about.html">O NAMA</a></li>
+                        <li><a href="priprema-kafe.html">PRIPREMA KAFE</a></li>
+                        <li><a href="contact.html">KONTAKT</a></li>
+                        <li><a href="coffee-shop.html">PORUČITE ONLINE</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+                <a href=""><img class="shop" src="images/shopping-bag.png"></a>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
 
         <h1>Coffee shop</h1>
     </section>
 
+    <div class="coffees">
+        <div class="container">
+            <h1 class="coffee-types">
+                KAFE
+            </h1>
+            <div class="coffee-grid">
+
+                <div class="display-coffee">
+                    <a href=""><img src="/images/light.jpg">
+                        <p class="coffee-name">Light</p>
+                    </a>
+                </div>
+
+                <div class="display-coffee">
+                    <a href=""><img src="/images/classic.jpg">
+                        <p class="coffee-name">Classic</p>
+                    </a>
+                </div>
+                <div class="display-coffee">
+                    <a href=""><img src="/images/strong.jpg">
+                        <p class="coffee-name">Strong</p>
+                    </a>
+                </div>
+                <div class="display-coffee">
+                    <a href=""><img src="/images/espresso.jpg">
+                        <p class="coffee-name">Espresso</p>
+                    </a>
+                </div>
+                <div class="display-coffee">
+                    <a href=""><img src="/images/aroma.jpg">
+                        <p class="coffee-name">Aroma</p>
+                    </a>
+                </div>
+                <div class="display-coffee">
+                    <a href=""><img src="/images/guatemala.jpg">
+                        <p class="coffee-name">Guatemala</p>
+                    </a>
+                </div>
+                <div class="display-coffee">
+                    <a href=""> <img src="/images/el-salvador.jpg">
+                        <p class="coffee-name">El Salvador</p>
+                    </a>
+                </div>
+
+                <div class="display-coffee">
+                    <a href=""><img src="/images/columbia.jpg">
+                        <p class="coffee-name">Columbia</p>
+                    </a>
+                </div>
+                <div class="display-coffee">
+                    <a href=""><img src="/images/etiopia.jpg">
+                        <p class="coffee-name">Ethiopia</p>
+                    </a>
+                </div>
+                <div class="display-coffee">
+                    <a href=""><img src="/images/honduras.jpg">
+                        <p class="coffee-name">Honduras</p>
+                    </a>
+                </div>
+                <div class="display-coffee">
+                    <a href=""><img src="/images/kenia.jpg">
+                        <p class="coffee-name">Kenia</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="kapsule">
+        <h1 class="kapsule-naslov">Kapsule tempo del caffe</h1>
+        <h3 class="kapsule-podnaslov">Kompatibilne za Dolce gusto Aparate</h3>
+        <div class="kapsule-grid">
+            <div class="display-coffee">
+                <a href=""><img src="/images/espresso-kapsule.jpg">
+                    <p class="coffee-name">Espresso</p>
+                    <p class="coffee-price">650,00 RSD</p>
+                </a>
+            </div>
+            <div class="display-coffee">
+                <a href=""><img src="/images/lungo.jpg">
+                    <p class="coffee-name">Lungo</p>
+                    <p class="coffee-price">650,00 RSD</p>
+                </a>
+            </div>
+            <div class="display-coffee">
+                <a href=""><img src="/images/intenso.jpg">
+                    <p class="coffee-name">Intenso</p>
+                    <p class="coffee-price">650,00 RSD</p>
+                </a>
+            </div>
+            <div class="display-coffee">
+                <a href=""><img src="/images/columbia-kapsule.jpg">
+                    <p class="coffee-name">Columbia</p>
+                    <p class="coffee-price">650,00 RSD</p>
+                </a>
+            </div>
+            <div class="display-coffee">
+                <a href=""><img src="/images/cortado.jpg">
+                    <p class="coffee-name">Cortado</p>
+                    <p class="coffee-price">650,00 RSD</p>
+                </a>
+            </div>
+            <div class="display-coffee">
+                <a href=""><img src="/images/caffelatte.jpg">
+                    <p class="coffee-name">Caffe Latte</p>
+                    <p class="coffee-price">650,00 RSD</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="gift-shop">
+        <h1 class="gshop-naslov">Freeshka Gift Shop</h1>
+        <div class="gshop-grid">
+            <div class="display-coffee">
+                <a href=""><img src="/gift-shop/poklon-set-300x300.jpg">
+                    <p class="coffee-name">Poklon set: Tegla + 200g kafe</p>
+                    <p class="coffee-price">950,00 RSD</p>
+                </a>
+            </div>
+            <div class="display-coffee">
+                <a href=""><img src="/gift-shop/vaucer-300x300.jpg">
+                    <p class="coffee-name">Vaučer</p>
+                    <p class="coffee-price">300,00 RSD</p>
+                </a>
+            </div>
+            <div class="display-coffee">
+                <a href=""><img src="/gift-shop/staklena-tegla-300x300.jpg">
+                    <p class="coffee-name">Staklena tegla</p>
+                    <p class="coffee-price">450,00 RSD</p>
+                </a>
+            </div>
+            <div class="display-coffee">
+                <a href=""><img src="/gift-shop/limenka-1-300x300.jpg">
+                    <p class="coffee-name">Limenka</p>
+                    <p class="coffee-price">650,00 RSD</p>
+                </a>
+            </div>
+            <div class="display-coffee">
+                <a href=""><img src="/gift-shop/termos-crni-1-300x300.jpg">
+                    <p class="coffee-name">Termos za kafu veliki crni</p>
+                    <p class="coffee-price">950,00 RSD</p>
+                </a>
+            </div>
+            <div class="display-coffee">
+                <a href=""><img src="/gift-shop/sola-1-300x300.jpg">
+                    <p class="coffee-name">Magična šolja</p>
+                    <p class="coffee-price">750,00 RSD</p>
+                </a>
+            </div>
+            <div class="display-coffee">
+                <a href=""><img src="/gift-shop/ceger-1-300x300.jpg">
+                    <p class="coffee-name">Ceger za kupovinu</p>
+                    <p class="coffee-price">500,00 RSD</p>
+                </a>
+            </div>
+            <div class="display-coffee">
+                <a href=""><img src="/gift-shop/slika-majivca-sajt-300x300.jpg">
+                    <p class="coffee-name">Majica</p>
+                    <p class="coffee-price">1.000,00 RSD</p>
+                </a>
+            </div>
+            <div class="display-coffee">
+                <a href=""><img src="/gift-shop/termos-beli-veliki-1-300x300.jpg">
+                    <p class="coffee-name">Termos veliki beli</p>
+                    <p class="coffee-price">950,00 RSD</p>
+                </a>
+            </div>
+            <div class="display-coffee">
+                <a href=""><img src="/gift-shop/sola-1-300x300.jpg">
+                    <p class="coffee-name">Termos mali beli</p>
+                    <p class="coffee-price">750,00 RSD</p>
+                </a>
+            </div>
+        </div>
+    </div>
     <!-- Footer -->
     <section class="footer">
         <div class="about">

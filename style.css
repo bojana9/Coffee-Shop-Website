@@ -57,6 +57,20 @@ nav {
     width: 100%;
 }
 
+.wrapper {
+    display: flex;
+}
+
+.shop {
+    width: 40px;
+    height: 40px;
+    padding-bottom: 17px;
+    padding-left: 10px;
+    ;
+}
+
+
+
 .text-box {
     width: 100%;
     color: white;
@@ -105,7 +119,7 @@ nav .fa {
     display: none;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 890px) {
     .text-box h1 {
 
         font-size: 30px;
@@ -143,6 +157,15 @@ nav .fa {
         font-size: 22px;
         cursor: pointer;
         margin: 10px 17px;
+
+    }
+
+    nav {
+        justify-items: space-between;
+    }
+
+    .wrapper {
+        display: flex;
     }
 
 

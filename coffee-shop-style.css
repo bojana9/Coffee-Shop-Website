@@ -1,0 +1,115 @@
+.coffees {
+    background-image: linear-gradient(rgba(61, 39, 4, 0.356), rgba(105, 70, 6, 0.164)), url(images/beansss.jpg);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    margin: 100px;
+
+}
+
+
+.coffee-types {
+    font-size: 50px;
+    padding-block: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.coffee-grid,
+.kapsule-grid,
+.gshop-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.coffee-grid img {
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    margin: 20px;
+
+}
+
+
+.display-coffee {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.coffee-name {
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    text-shadow: 2px 2px rgb(109, 66, 17);
+    transition: color, 0.5s;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.coffee-name:hover {
+    color: black;
+    text-shadow: none;
+    cursor: pointer;
+}
+
+.kapsule {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(61, 39, 4, 0.795), rgba(0, 0, 0, 0.486)), url(images/coffee-machine.jpg);
+    object-fit: cover;
+    align-items: center;
+    background-repeat: no-repeat;
+    margin: 100px;
+}
+
+.kapsule-naslov,
+.gshop-naslov {
+    font-size: 50px;
+    padding-top: 3rem;
+
+}
+
+.gshop-naslov {
+    padding-bottom: 50px;
+}
+
+.kapsule-podnaslov {
+    font-size: 25px;
+    color: white;
+    font-weight: 400;
+    text-shadow: 2px 2px rgba(165, 42, 42, 0.437);
+    padding-bottom: 3rem;
+}
+
+.kapsule-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 5rem;
+
+}
+
+.coffee-price {
+    color: white;
+    font-size: 20px;
+}
+
+.gift-shop {
+    background-image: linear-gradient(rgba(61, 39, 4, 0.795), rgba(0, 0, 0, 0.486)), url(gift-shop/background-3.jpg);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+}
+
+.gshop-grid {
+    row-gap: 20px;
+    column-gap: 5rem;
+
+}
