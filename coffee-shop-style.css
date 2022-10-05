@@ -15,8 +15,7 @@
 }
 
 .coffee-grid,
-.kapsule-grid,
-.gshop-grid {
+.kapsule-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
@@ -103,13 +102,11 @@ a {
     background-image: linear-gradient(rgba(61, 39, 4, 0.795), rgba(0, 0, 0, 0.486)), url(gift-shop/background-3.jpg);
     background-position: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     margin: 100px;
 }
 
-.gshop-grid {
-    row-gap: 20px;
-    column-gap: 5rem;
-
+.display-coffee {
+    width: 20%;
 }

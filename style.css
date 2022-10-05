@@ -521,7 +521,7 @@ p {
 
 .about-headline {
     margin-top: 10px;
-    ;
+
 }
 
 .about-text {
@@ -549,9 +549,7 @@ p {
 }
 
 .icons .fa {
-    font-size: 1.5rem;
     color: black;
-    size: 2rem;
     margin: 0 13px;
     cursor: pointer;
     padding: 18px 0;
