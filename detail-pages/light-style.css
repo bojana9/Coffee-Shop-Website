@@ -32,6 +32,13 @@
     width: 500px;
     object-fit: cover;
     box-shadow: 0px 0px 5px black;
+    position: relative;
+
+}
+
+.fa-search {
+    position: absolute;
+    color: white;
 
 }
 
@@ -132,11 +139,12 @@
 
 .payment-container {
     background-image: url('detail-images/background.jpg');
+    display: flex;
+    flex-direction: column;
 
 }
 
 .rules-container {
-    color: white;
     display: flex;
     justify-content: center;
     column-gap: 50px;
@@ -144,7 +152,6 @@
 }
 
 .items {
-    cursor: pointer;
     padding-top: 30px;
 }
 
@@ -171,4 +178,25 @@ nav {
     justify-content: center;
     column-gap: 50px;
     padding-block: 40px;
+}
+
+.payment-container a {
+    text-decoration: none;
+    color: white;
+
+}
+
+@media (max-width: 810px) {
+
+    .types-payment a {
+        display: inlne-block;
+    }
+
+    .types-payment {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
 }

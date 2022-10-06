@@ -1,0 +1,16 @@
+.text-container {
+    margin: 50px;
+}
+
+.text-container p {
+    padding: 0;
+    margin: 0;
+    color: gray;
+    text-align: justify;
+}
+
+.text-container h3 {
+    padding-block: 10px;
+
+
+}

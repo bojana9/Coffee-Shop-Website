@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Light | Freeshka</title>
+    <title>Isporuka & Reklamacije | Freeshka coffee</title>
+
+    <link rel="stylesheet" href="style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,16 +17,17 @@
     <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"
         type='text/css'>
 
-    <link rel="stylesheet" href="../coffee-shop-style.css">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../about-style.css">
-    <link rel="stylesheet" href="../contact-style.css">
-    <link rel="stylesheet" href="light-style.css">
+    <link rel="stylesheet" href="../priprema-kafe-style.css">
+    <link rel="stylesheet" href="uslovi-koriscenja.css">
+    <link rel="stylesheet" href="../detail-pages/light-style.css">
+
 </head>
 
 <body>
     <!-- Header -->
-    <section class="sub-header-detail">
+    <section class="sub-header">
         <nav>
             <a href="../index.html"><img src="../images/logo.png" /></a>
             <div class="wrapper">
@@ -42,47 +45,41 @@
                 <a href=""><img class="shop" src="../images/shopping-bag.png"></a>
             </div>
         </nav>
+        <h1>Isporuka & Reklamacije</h1>
     </section>
 
+    <div class="text-container">
+        <h3>ISPORUKA</h3>
+        <p>FREESHKA COFFEE Co. se obavezuje da će kupljenu robu u roku od jednog radnog dana predati kurirskoj službi
+            koja je zadužena za dostavu. Predviđeno ukupno vreme za dostavu robe Kupcu na adresu koju je uneo u procesu
+            kupovine je najviše <b>6 radnih dana</b>, bez obzira na destinaciju u Srbiji (najčešće roba stigne na adresu
+            kupca
+            za 2 do 3 dana).</p>
+        <p>Ukoliko Kupac unese pogrešne lične podatke ili podatke o adresi prebivališta (adresa za isporuku robe)
+            prilikom procesa kupovine, FREESHKA COFFEE Co. ne snosi odgovornost za neisporučivanje robe. U tom slučaju
+            FREESHKA COFFEE Co. će pokušati da kontaktira Kupca i isporuči robu na novo utvrđenu adresu uz naplatu
+            dodatnih troškova za dostavu, a u slučaju da ne uspe, Kupac se tereti za interne troškove u visini od 300,00
+            dinara.</p>
+        <p>okovi za isporuku robe mogu biti produženi ukoliko Kupac zatraži posebnu doradu na odabranom proizvodu. Kupac
+            će o tome biti unapred obavešten.
 
-    <section class="detail-container">
+            Ukoliko Kupac ne želi da preuzme kupljenu robu, isti se tereti za nastale manipulativne troškove u visini od
+            300,00 dinara.
 
-        <div class="picture-container">
-            <i class="fa fa-search"></i>
-            <img src="../images/light.jpg">
-        </div>
-        <div class="coffee-container">
-            <h3>Classic</h3>
-            <p class="padding">150,00 rsd - 1.500,00 rsd</p>
-            <p class="padding">Naš best seller.</p>
-            <p class="padding">Mešavina srednje jačine, izbalansiranog ukusa, idealna za spremanje domaće kafe.</p>
-            <p>Granulacija</p>
-            <select>
-                <option value="choose">Odaberite vrstu</option>
-                <option value="domaca">Domaća</option>
-                <option value="espresso">Espresso</option>
-                <option value="filter">Filter</option>
-                <option value="french-press">French Press</option>
-                <option value="mocka-pot">Mocka-pot</option>
-                <option value="zrno">Zrno</option>
-            </select>
-            <p>Pakovanje</p>
-            <div class="cena">
-                <select id="select-grams" onChange="getOption()">
-                    <option value="150,00 rsd">100g</option>
-                    <option value="300,00 rsd">200g</option>
-                    <option value="750,00 rsd">500g</option>
-                    <option value="1.500,00 rsd">1kg</option>
-                </select>
-                <span class="output">150,00 rsd</span>
-            </div>
-            <div class="wrapper">
-                <input type="number" value="1">
-                <!--
-            --><button class="add-btn">Dodaj u korpu</button>
-            </div>
-        </div>
-    </section>
+            Cena isporuke za porudzbine <b>preko 5.000,00 din je besplatna</b>, za porudzbine ispod 5000,00 dostava se
+            naplaćuje po cenovniku post expressa.
+
+            Nakon obavljene kupovine, a pre isporuke na kućnu adresu, specifikacija izabranih proizvoda se ne može
+            menjati.</p>
+        <p>Kupac je u mogućnosti nakon kupovine da se informiše o <b>statusu</b> iste na internetu ili na broj telefona
+            +381 21
+            301 81 44.</p>
+        <h3>REKLAMACIJE I POVRAĆAJ ROBE</h3>
+        <p>U slučaju da imate bilo kakvu reklamaciju na proizvod ili našu uslugu, molimo Vas da nas kontaktirate. U
+            najkraćem mogućem roku ćemo obraditi Vaš zahtev i odreagovati u skladu sa nastalom situacijom.</p>
+
+        <p>Uslovi i postupak reklamacije utvrđeni su u skladu sa Zakonom o trgovini i Zakonom o zaštiti potrošača.</p>
+    </div>
 
     <!-- Footer -->
     <section class="footer">
@@ -90,7 +87,7 @@
             <div class="headline">
                 <h4>Freeshka kafa</h4>
                 <span class="coffee">
-                    <i class="fa fa-coffee 2x"></i>
+                    <i class="fa fa-coffee "></i>
                 </span>
             </div>
             <p>Sve počinje prvom jutarnjom, nastavlja se popodnevnom a nekom i sa večernjom, naravno kafom…</p>
@@ -98,7 +95,7 @@
         <div class="details">
             <div class="about-box">
                 <span class="icon">
-                    <i class="fa fa-bicycle 2x"></i></span>
+                    <i class="fa fa-bicycle fa-2x"></i></span>
                 <div class="about-headline">Bike & Pet Friendly</div>
                 <div class="about-text"> Bez obzira na to kako dolazite - sa ljubimcem, na rolerima, biciklu, sa
                     prijateljem ili
@@ -107,7 +104,7 @@
             </div>
             <div class="about-box">
                 <span class="icon">
-                    <i class="fa fa-clock-o 2x"></i></span>
+                    <i class="fa fa-clock-o fa-2x"></i></span>
                 <div class="about-headline">Working hours</div>
                 <div class="about-text"> Pon - Pet: 06:30 - 21:00 <br>
                     Subota: 08:00 - 21:00 <br>
@@ -115,7 +112,7 @@
             </div>
             <div class="about-box">
                 <span class="icon">
-                    <i class="fa fa-envelope "></i></span>
+                    <i class="fa fa-envelope fa-2x"></i></span>
                 <div class="about-headline">Contact</div>
                 <div class="about-text"> Bulevar oslobođenja 94, 21000 Novi Sad <br>
                     Tel: +381 63 21 301 81 44 <br>
@@ -133,16 +130,16 @@
     <!--Payment-section-->
     <div class="payment-container">
         <div class="rules-container">
-            <a href="../policies/uslovi-koriscenja.html">
+            <a href="uslovi-koriscenja.html">
                 <div class="items">Uslovi korišćenja</div>
             </a>
-            <a href="../policies/politika-privatnosti.html">
+            <a href="politika-privatnosti.html">
                 <div class="items">Politika privatnosti</div>
             </a>
-            <a href="../policies/porucivanje.html">
+            <a href="porucivanje.html">
                 <div class="items">Poručivanje</div>
             </a>
-            <a href="../policies/isporuka.html">
+            <a href="isporuka.html">
                 <div class="items">Isporuka</div>
             </a>
         </div>
@@ -172,14 +169,6 @@
             navLinks.style.right = "-200px";
         }
     </script>
-    <script type="text/javascript">
-        function getOption() {
-            selectedElement = document.querySelector('#select-grams');
-            output = selectedElement.value;
-            document.querySelector('.output').textContent = output;
-        }
-    </script>
-
 </body>
 
 </html>
