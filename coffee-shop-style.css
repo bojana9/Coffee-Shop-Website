@@ -2,7 +2,9 @@
     background-image: linear-gradient(rgba(61, 39, 4, 0.356), rgba(105, 70, 6, 0.164)), url(images/beansss.jpg);
     object-fit: cover;
     background-repeat: no-repeat;
-    margin: 100px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
 
 }
 
@@ -28,12 +30,11 @@
 
 }
 
-
 .display-coffee {
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;
     align-items: center;
+
+    padding-right: 50px;
 
 }
 
@@ -60,10 +61,11 @@ a {
     display: flex;
     flex-direction: column;
     background-image: linear-gradient(rgba(61, 39, 4, 0.795), rgba(0, 0, 0, 0.486)), url(images/coffee-machine.jpg);
-    object-fit: cover;
-    align-items: center;
     background-repeat: no-repeat;
-    margin: 100px;
+    background-position: center;
+    align-items: center;
+    padding-bottom: 30px;
+
 }
 
 .kapsule-naslov,
@@ -85,13 +87,6 @@ a {
     padding-bottom: 3rem;
 }
 
-.kapsule-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 20px;
-    column-gap: 5rem;
-
-}
 
 .coffee-price {
     color: white;
@@ -100,13 +95,38 @@ a {
 
 .gift-shop {
     background-image: linear-gradient(rgba(61, 39, 4, 0.795), rgba(0, 0, 0, 0.486)), url(gift-shop/background-3.jpg);
+    background-repeat: no-repeat;
     background-position: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    margin: 100px;
+    padding-bottom: 30px;
 }
 
-.display-coffee {
-    width: 20%;
+.gift-shop-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: top;
+}
+
+.kapsule-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 5rem;
+
+}
+
+
+.display-coffee-gs {
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coffee-price {
+    cursor: default;
 }

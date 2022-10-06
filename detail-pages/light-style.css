@@ -15,38 +15,78 @@
     box-shadow: 0px 0px 10px black;
     padding-block: 50px;
     margin-block: 50px;
-    margin-inline: 150px;
 
 }
 
 .coffee-container {
     background-color: ghostwhite;
     box-shadow: 0px 0px 5px black;
-
     height: 600px;
     width: 500px;
 }
 
+
+
 .picture-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0px 5px black;
+
+}
+
+
+.picture-container {
+    position: relative;
     height: 600px;
     width: 500px;
     object-fit: cover;
-    box-shadow: 0px 0px 5px black;
-    position: relative;
-
 }
 
 .fa-search {
     position: absolute;
     color: white;
+    z-index: 50;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/*Pop-up*/
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 200;
+
+    visibility: hidden;
 
 }
 
-.coffee-container h3 {
-    padding-left: 20px;
-    padding-top: 30px;
+.popup span {
+    position: absolute;
+    top: 0;
+    right: 30px;
     font-size: 40px;
-    font-weight: 500;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    z-index: 200;
+}
+
+.popup img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+    z-index: 200;
 }
 
 
@@ -93,6 +133,13 @@
     outline: none;
 
 
+}
+
+.coffee-container h3 {
+    padding-left: 20px;
+    padding-top: 30px;
+    font-size: 40px;
+    font-weight: 500;
 }
 
 .wrapper {
@@ -198,5 +245,33 @@ nav {
         justify-content: center;
 
     }
+
+}
+
+@media (max-width: 1030px) {
+    .detail-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 530px) {
+    .picture-container {
+        height: 400px;
+        width: 300px;
+        display: flex;
+        overflow: hidden;
+    }
+
+    .coffee-container {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .coffee-container p {
+        margin-block: 15px;
+        ;
+    }
+
 
 }
