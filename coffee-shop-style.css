@@ -2,8 +2,6 @@
     background-image: linear-gradient(rgba(61, 39, 4, 0.356), rgba(105, 70, 6, 0.164)), url(images/beansss.jpg);
     object-fit: cover;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
     padding-bottom: 30px;
 
 }
@@ -16,11 +14,15 @@
     justify-content: center;
 }
 
-.coffee-grid,
-.kapsule-grid {
+.coffee-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    grid-gap: 2em;
+    margin-inline: 10em;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
+
+/*@media(max-width: 1370px) {}*/
 
 .coffee-grid img {
     width: 300px;
@@ -32,9 +34,9 @@
 
 .display-coffee {
     display: flex;
+    width: 25%;
     align-items: center;
-
-    padding-right: 50px;
+    justify-content: center;
 
 }
 
@@ -58,14 +60,12 @@ a {
 }
 
 .kapsule {
-    display: flex;
-    flex-direction: column;
     background-image: linear-gradient(rgba(61, 39, 4, 0.795), rgba(0, 0, 0, 0.486)), url(images/coffee-machine.jpg);
     background-repeat: no-repeat;
     background-position: center;
     align-items: center;
     padding-bottom: 30px;
-
+    text-align: center;
 }
 
 .kapsule-naslov,
@@ -103,6 +103,8 @@ a {
     padding-bottom: 30px;
 }
 
+
+
 .gift-shop-grid {
     display: flex;
     flex-direction: row;
@@ -110,19 +112,76 @@ a {
     align-items: top;
 }
 
-.kapsule-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 20px;
-    column-gap: 5rem;
+@media(max-width: 1380px) {
+    .display-coffee-gs {
 
+        flex-basis: 33.33%;
+
+    }
 }
 
+@media(max-width: 1050px) {
+    .display-coffee-gs {
+
+        flex-basis: 50%;
+    }
+
+    .gift-shop {
+        background-repeat: repeat;
+    }
+}
+
+@media(max-width: 700px) {
+    .display-coffee-gs {
+
+        flex-basis: 100%;
+
+    }
+
+    .gift-shop {
+        background-repeat: repeat;
+    }
+}
+
+.kapsule-grid {
+    display: grid;
+    /*grid-template-columns: repeat(3, 1fr);*/
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    grid-gap: 2em;
+    margin-inline: 20em;
+}
+
+
+@media (max-width:1290px) {
+    .kapsule-grid {
+        margin: 0;
+        grid-template-columns: 1fr;
+    }
+
+    .kapsule {
+        background-repeat: repeat;
+    }
+}
+
+/*
+@media (max-width: 1230px) {
+    .kapsule-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 780px) {
+    .kapsule-grid {
+        grid-template-columns: 1fr;
+    }
+}
+*/
 
 .display-coffee-gs {
     width: 25%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
