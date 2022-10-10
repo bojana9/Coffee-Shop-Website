@@ -27,7 +27,7 @@
 
 
 
-.picture-container img {
+.zoom {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -40,7 +40,6 @@
     position: relative;
     height: 600px;
     width: 500px;
-    object-fit: cover;
 }
 
 .fa-search {
@@ -63,7 +62,8 @@
     width: 100%;
     z-index: 200;
 
-    visibility: hidden;
+    /*visibility: hidden;*/
+    display: none;
 
 }
 
@@ -89,6 +89,9 @@
     z-index: 200;
 }
 
+.txt-wrap {
+    height: 150px;
+}
 
 .coffee-container p {
     padding-left: 20px;
