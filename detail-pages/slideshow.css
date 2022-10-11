@@ -1,0 +1,71 @@
+.mySlides {
+    display: none;
+    /*height: 100px;
+    width: auto;
+    background-color: rgba(0, 0, 0, 0.5);*/
+}
+
+/*.detail-container-slideshow {
+    background-image: url('detail-images/try\ background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: top;
+    box-shadow: 0px 0px 10px black;
+    padding-block: 50px;
+    margin-block: 50px;
+}
+
+.mySlides img {
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+}*/
+
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.img-container {
+    position: relative;
+}
+
+.row {
+    position: absolute;
+    bottom: 0;
+}

@@ -28,6 +28,8 @@
     }
 }
 
+
+
 form {
     background-color: white;
     height: 450px;
@@ -100,4 +102,11 @@ span {
 
 input[type="phone"] {
     vertical-align: text-top;
+}
+
+.icon {
+    color: black;
+    font-size: 20px;
+    align-items: center;
+    padding: 0;
 }
