@@ -1,71 +1,357 @@
-.mySlides {
-    display: none;
-    /*height: 100px;
-    width: auto;
-    background-color: rgba(0, 0, 0, 0.5);*/
+.sub-header-detail {
+    background-image: url('detail-images/background.jpg');
+
 }
 
-/*.detail-container-slideshow {
+.detail-container {
     background-image: url('detail-images/try\ background.jpg');
-    background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: row;
     gap: 10px;
     justify-content: center;
-    align-items: top;
+    align-items: center;
     box-shadow: 0px 0px 10px black;
     padding-block: 50px;
     margin-block: 50px;
+
+
+}
+
+.coffee-container {
+    background-color: ghostwhite;
+    box-shadow: 0px 0px 5px black;
+    height: 600px;
+    width: 500px;
+}
+
+.gallery-container {
+    height: 600px;
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .mySlides img {
-    height: 100px;
+    height: 495px;
+    width: 500px;
+}
+
+
+.full-img-container {
+    height: 495px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.mySlides {
+    display: none;
+}
+
+.row {
+    display: flex;
+    justify-content: left;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-block: 5px;
+}
+
+.column img {
+    padding: 0px;
+    display: block;
+    padding-right: 10px;
     width: 100px;
-    cursor: pointer;
-}*/
+    height: 100px;
+}
 
 .cursor {
     cursor: pointer;
 }
 
-/* Next & previous buttons */
-.prev,
-.next {
-    cursor: pointer;
-    position: absolute;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
+.zoom {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0px 5px black;
+
 }
 
-/* Position the "next button" to the right */
+.prev,
 .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+    color: black;
+    position: absolute;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+
+}
+
+.prev {
+    left: 0px;
+}
+
+.next {
+    right: 0px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
 }
 
 .demo {
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
-.active,
 .demo:hover {
     opacity: 1;
 }
 
-.img-container {
+.picture-container {
     position: relative;
+    height: 600px;
+    width: 500px;
 }
 
-.row {
+.fa-search {
     position: absolute;
-    bottom: 0;
+    background-color: white;
+    padding: 7px;
+    border-radius: 20px;
+    z-index: 50;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+/*Pop-up*/
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 200;
+
+    /*visibility: hidden;*/
+    display: none;
+
+}
+
+.popup span {
+    position: absolute;
+    top: 0;
+    right: 30px;
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+    z-index: 200;
+}
+
+.popup img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    width: 750px;
+    object-fit: cover;
+    z-index: 200;
+}
+
+.txt-wrap {
+    height: 150px;
+}
+
+.coffee-container p {
+    padding-left: 20px;
+    color: rgb(34, 34, 34);
+    font-size: 20px;
+    padding-block: 0;
+    margin-top: 20px;
+}
+
+.padding {
+    margin-block: 40px;
+}
+
+.coffee-container select {
+    margin-left: 19px;
+    margin-top: 7px;
+    padding-block: 5px;
+    outline: none;
+
+    padding-inline: 10px;
+    border: 1px solid gray;
+    font-size: 20px;
+    font-weight: 300;
+    display: block;
+}
+
+.cena {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+
+
+.coffee-container input {
+    border: 2px solid black;
+    font-size: 20px;
+    font-weight: 300;
+    padding-inline: 7px;
+    width: 50px;
+    border-right: none;
+    outline: none;
+
+
+}
+
+.coffee-container h3 {
+    padding-left: 20px;
+    padding-top: 30px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.wrapper {
+    margin-top: 30px;
+    margin-left: 19px;
+}
+
+.add-btn {
+    background-color: ghostwhite;
+    color: black;
+    font-size: 25px;
+    font-weight: 500;
+    border: 2px solid black;
+    transition: all .35s ease-in-out;
+    padding: 3px
+}
+
+.add-btn:hover {
+    color: white;
+    background-color: black;
+}
+
+
+.icon {
+    padding: 0;
+    font-size: 22[x];
+    color: black;
+}
+
+.author {
+    font-size: 15px;
+}
+
+
+.output {
+    color: black;
+}
+
+.coffee {
+    color: black;
+    margin: 0;
+    padding-left: 0%;
+}
+
+.payment-container {
+    background-image: url('detail-images/background.jpg');
+    display: flex;
+    flex-direction: column;
+
+}
+
+.rules-container {
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+
+}
+
+.items {
+    padding-top: 30px;
+}
+
+.items::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    display: block;
+    margin: auto;
+    transition: width, 0.35s;
+}
+
+.items:hover::after {
+    width: 100%;
+}
+
+nav {
+    padding-block: 0;
+}
+
+.types-payment {
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    padding-block: 40px;
+}
+
+.payment-container a {
+    text-decoration: none;
+    color: white;
+
+}
+
+@media (max-width: 810px) {
+
+    .types-payment a {
+        display: inlne-block;
+    }
+
+    .types-payment {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+}
+
+@media (max-width: 1030px) {
+    .detail-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 530px) {
+    .picture-container {
+        height: 400px;
+        width: 300px;
+        display: flex;
+        overflow: hidden;
+    }
+
+    .coffee-container {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .coffee-container p {
+        margin-block: 15px;
+        ;
+    }
+
+
 }
